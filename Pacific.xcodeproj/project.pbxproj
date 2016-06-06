@@ -85,11 +85,11 @@
 		EEBEB9F71D0548E5004F4623 = {
 			isa = PBXGroup;
 			children = (
+				879FAD370FE28D950747A9B5 /* Frameworks */,
 				EEBEBA031D0548E5004F4623 /* Pacific */,
 				EEBEBA0F1D0548E5004F4623 /* PacificTests */,
-				EEBEBA021D0548E5004F4623 /* Products */,
 				48C8FF61AF4321FB8A3E292D /* Pods */,
-				879FAD370FE28D950747A9B5 /* Frameworks */,
+				EEBEBA021D0548E5004F4623 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				EEBEBA1B1D0548EA004F4623 /* Source */,
-				EEBEBA041D0548E5004F4623 /* Pacific.h */,
 				EEBEBA061D0548E5004F4623 /* Info.plist */,
+				EEBEBA041D0548E5004F4623 /* Pacific.h */,
 			);
 			path = Pacific;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		EEBEBA0F1D0548E5004F4623 /* PacificTests */ = {
 			isa = PBXGroup;
 			children = (
-				EEBEBA101D0548E5004F4623 /* PacificTests.swift */,
 				EEBEBA121D0548E5004F4623 /* Info.plist */,
+				EEBEBA101D0548E5004F4623 /* PacificTests.swift */,
 			);
 			path = PacificTests;
 			sourceTree = "<group>";
@@ -124,13 +124,13 @@
 		EEBEBA1B1D0548EA004F4623 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EEBEBA261D05495F004F4623 /* AppExtensions.swift */,
 				EEBEBA1C1D05492D004F4623 /* AppBootstrap.swift */,
 				EEBEBA1D1D05492D004F4623 /* AppDB.swift */,
+				EEBEBA261D05495F004F4623 /* AppExtensions.swift */,
 				EEBEBA1F1D05492D004F4623 /* AppHttp.swift */,
 				EEBEBA201D05492D004F4623 /* AppSockets.swift */,
 			);
-			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
