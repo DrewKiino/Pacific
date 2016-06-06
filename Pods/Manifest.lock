@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (3.2.1)
+  - AsyncSwift (1.7.2)
+  - Atlantis (0.1.1)
+  - Neon (0.2.0)
+  - Pantry (0.2.1)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - Socket.IO-Client-Swift (6.1.2)
+  - SwiftDate (3.0.8)
+  - SwiftyJSON (2.3.2)
+  - Tide (0.1.5):
+    - AsyncSwift
+  - UIColor_Hex_Swift (2.1)
+
+DEPENDENCIES:
+  - Alamofire (= 3.2.1)
+  - AsyncSwift
+  - Atlantis
+  - Neon
+  - Pantry
+  - SDWebImage
+  - Socket.IO-Client-Swift
+  - SwiftDate
+  - SwiftyJSON
+  - Tide
+  - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  Atlantis: 33d4c4c436b6af3b640c2c6b2317c72d1fb41f00
+  Neon: c7de6b6186c31870a0cacab6e018d0641bd12dca
+  Pantry: 433931c8f545dd3426ca7d09a4edd5afa89c6e01
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Tide: 0b38feb296b3fa90d3428b986398a0c8325032d1
+  UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
+
+PODFILE CHECKSUM: 45829a0fa6d5bc9b4135745e6dbeaad43d0a18d1
+
+COCOAPODS: 1.0.1
