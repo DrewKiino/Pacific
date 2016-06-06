@@ -13,7 +13,7 @@ use_frameworks!
 
 target 'Pacific' do
 
-pod 'Pacific'
+# pod 'Pacific'
 
 # color libs
 # pod 'UIColor_Hex_Swift'

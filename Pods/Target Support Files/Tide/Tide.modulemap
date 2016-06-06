@@ -1,6 +1,0 @@
-framework module Tide {
-  umbrella header "Tide-umbrella.h"
-
-  export *
-  module * { export * }
-}

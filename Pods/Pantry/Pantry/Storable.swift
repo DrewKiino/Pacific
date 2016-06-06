@@ -32,9 +32,9 @@ public protocol Storable {
     /** 
      Struct initialization  
 
-     - parameter warehouse: the `Warehouseable` object from which you can extract your struct's properties
+     - parameter warehouse: the `JSONWarehouse` object from which you can extract your struct's properties
      */
-    init?(warehouse: Warehouseable)
+    init(warehouse: JSONWarehouse)
 
     /**
      Dictionary representation  
@@ -45,27 +45,81 @@ public protocol Storable {
     func toDictionary() -> [String: AnyObject]
 }
 
-public extension Storable {
+extension Storable {
     /**
      Dictionary representation
      Returns the dictioanry representation of the current struct
      
+     _Adapted from [@IanKeen](https://gist.github.com/IanKeen/3a6c3b9a42aaf9fea982)_
      - returns: [String: AnyObject]
      */
     func toDictionary() -> [String: AnyObject] {
-        return Mirror(reflecting: self).toDictionary()
+        let mirror = Mirror(reflecting: self)
+        return mirror.children.reduce([:]) { result, child in
+            guard let key = child.label else { return result }
+            
+            let childMirror = Mirror(reflecting: child.value)
+            if let style = childMirror.displayStyle where style == .Collection {
+                // collections need to be unwrapped, children tested and
+                // toDictionary called on each
+                let converted: [AnyObject] = childMirror.children
+                    .filter { $0.value is Storable || $0.value is AnyObject }
+                    .map { collectionChild in
+                        if let convertable = collectionChild.value as? Storable {
+                            return convertable.toDictionary()
+                        } else {
+                            return collectionChild.value as! AnyObject
+                        }
+                    }
+                return combine(result, addition: [key: converted])
+                
+            } else {
+                // non-collection types, toDictionary or just cast default types
+                // optionals need to be checked and unwrapped
+                let childMirror = Mirror(reflecting: child.value)
+
+                if let value = child.value as? Storable {
+                    return combine(result, addition: [key: value.toDictionary()])
+                } else if let value = child.value as? AnyObject {
+                    return combine(result, addition: [key: value])
+                } else if childMirror.displayStyle == .Optional {
+                    // yes, this is how you detect and unwrap an Optional
+                    // disguised as an Any
+                    if childMirror.children.count != 0 {
+                        let (_, some) = childMirror.children.first!
+                        if let some = some as? Storable {
+                            return combine(result, addition: [key: some.toDictionary()])
+                        }
+                    }
+                } else {
+                    // throw an error? not a type we support
+                }
+            }
+            
+            return result
+        }
+    }
+    
+    // convenience for combining dictionaries
+    private func combine(from: [String: AnyObject], addition: [String: AnyObject]) -> [String: AnyObject] {
+        var result = [String: AnyObject]()
+        [from, addition].forEach { dict in
+            dict.forEach { result[$0.0] = $0.1 }
+        }
+        return result
     }
 }
 
 /**
  Storage expiry
+
+ - Never: the storage never expires
+ - Seconds: the storage expires after a given timeout in seconds (`NSTimeInterval`)
+ - Date: the storage expires at a given date
  */
 public enum StorageExpiry {
-    /// the storage never expires
     case Never
-    /// the storage expires after a given timeout in seconds (`NSTimeInterval`)
     case Seconds(NSTimeInterval)
-    /// the storage expires at a given date (`NSDate`)
     case Date(NSDate)
 
     /**
@@ -91,7 +145,7 @@ public enum StorageExpiry {
 /**
 Default storable types
 
-Default types are `Bool`, `String`, `Int`, `Float`, `Double`, `NSDate`
+Default types are `Bool`, `String`, `Int`, `Float`
 */
 public protocol StorableDefaultType {
 }
@@ -100,39 +154,3 @@ extension Bool: StorableDefaultType { }
 extension String: StorableDefaultType { }
 extension Int: StorableDefaultType { }
 extension Float: StorableDefaultType { }
-extension Double: StorableDefaultType { }
-extension NSDate: StorableDefaultType { }
-
-// MARK: Enums with Raw Values
-
-/**
-*  For enums with a raw value such as ```enum: Int```, adding this protocol makes the enum storable.
-*
-*  You should not need to implement any of the methods or properties in this protocol.
-*  Enums without a raw value e.g. with associated types are not supported.
-*/
-public protocol StorableRawEnum: Storable {
-    typealias StorableRawType: StorableDefaultType
-
-    /// Provided automatically for enum's that have a raw value
-    var rawValue: StorableRawType { get }
-    init?(rawValue: StorableRawType)
-}
-
-public extension StorableRawEnum {
-    init?(warehouse: Warehouseable) {
-        if let value: StorableRawType = warehouse.get("rawValue") {
-            self.init(rawValue: value)
-            return
-        }
-        return nil
-    }
-
-    func toDictionary() -> [String: AnyObject] {
-        if let value = rawValue as? AnyObject {
-            return ["rawValue": value]
-        } else {
-            return [: ]
-        }
-    }
-}

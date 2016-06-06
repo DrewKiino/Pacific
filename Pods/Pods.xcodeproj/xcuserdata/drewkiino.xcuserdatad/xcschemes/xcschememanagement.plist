@@ -19,32 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Neon.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ObjectMapper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pacific.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pantry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Pacific.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -64,40 +44,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyTimer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Tide.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UIColor_Hex_Swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2160053CEC4DCFE9E28476FDA517D85D</key>
+		<key>323B67084C40D48EA5C36BAF7315E2B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2620F12C1176436B3B3784520F311BC7</key>
+		<key>3F6432029527F123F77AF1519F139E92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F5480B26F899BBD459DD0B121CB5F87</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>437012B4E4E7A5FC3357266543BC557D</key>
+		<key>4A7077D51FFD3BEFC6C4F56DF5FB2CAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>523A2EFB11A61E2E6092898E46EE495B</key>
+		<key>55DB9EBBD94206720C9D5D2E60FB00B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,42 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C81512A9A26B1BB0D935A3B98F1EB0B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A71C039EE4C1D2CD83756D8A5E51BA3A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B1E8BA1868959D926AD1A4505BFA4DCE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C8F54543305BD95F34FAB796C9CAAFCA</key>
+		<key>AC373238FDDAC10D89EE59523FAEFD85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D1DC35DB2C695031A72543555FB23729</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D7D638922A798DC0536F0DC9B7429DA7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F6C7137AC722DCBAB08EA5FB62689A24</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F8F4E8CEB1225C3C67D5DEB04A06B746</key>
 		<dict>
 			<key>primary</key>
 			<true/>
