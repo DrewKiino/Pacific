@@ -15,7 +15,6 @@
 		EEBEBA221D05492D004F4623 /* AppDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEBA1D1D05492D004F4623 /* AppDB.swift */; };
 		EEBEBA241D05492D004F4623 /* AppHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEBA1F1D05492D004F4623 /* AppHttp.swift */; };
 		EEBEBA251D05492D004F4623 /* AppSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEBA201D05492D004F4623 /* AppSockets.swift */; };
-		EEBEBA271D05495F004F4623 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEBA261D05495F004F4623 /* AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 		EEBEBA1D1D05492D004F4623 /* AppDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDB.swift; sourceTree = "<group>"; };
 		EEBEBA1F1D05492D004F4623 /* AppHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHttp.swift; sourceTree = "<group>"; };
 		EEBEBA201D05492D004F4623 /* AppSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSockets.swift; sourceTree = "<group>"; };
-		EEBEBA261D05495F004F4623 /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 			children = (
 				EEBEBA1C1D05492D004F4623 /* AppBootstrap.swift */,
 				EEBEBA1D1D05492D004F4623 /* AppDB.swift */,
-				EEBEBA261D05495F004F4623 /* AppExtensions.swift */,
 				EEBEBA1F1D05492D004F4623 /* AppHttp.swift */,
 				EEBEBA201D05492D004F4623 /* AppSockets.swift */,
 			);
@@ -276,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEBEBA271D05495F004F4623 /* AppExtensions.swift in Sources */,
 				EEBEBA241D05492D004F4623 /* AppHttp.swift in Sources */,
 				EEBEBA251D05492D004F4623 /* AppSockets.swift in Sources */,
 				EEBEBA211D05492D004F4623 /* AppBootstrap.swift in Sources */,

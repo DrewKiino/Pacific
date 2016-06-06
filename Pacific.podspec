@@ -135,12 +135,12 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  s.dependency "Atlantis"
-  s.dependency "Socket.IO-Client-Swift"
   s.dependency "Alamofire", "3.2.1"
+  s.dependency "AsyncSwift"
+  s.dependency "Atlantis"
+  s.dependency "Pantry"
+  s.dependency "Socket.IO-Client-Swift"
   s.dependency "SwiftyJSON"
   s.dependency "SwiftDate"
-  s.dependency "AsyncSwift"
-  s.dependency "Pantry"
   
 end
