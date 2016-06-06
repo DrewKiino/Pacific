@@ -137,7 +137,7 @@ Pod::Spec.new do |s|
 
   s.dependency "UIColor_Hex_Swift"
   s.dependency "Atlantis"
-  s.dependency "ObjectMapper"
+  s.dependency "ObjectMapper", "1.1.5"
   s.dependency "Socket.IO-Client-Swift"
   s.dependency "Alamofire", "3.2.1"
   s.dependency "SwiftyJSON"
