@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Pacific"
-  s.version      = "0.0.4"  
+  s.version      = "0.0.5"  
   s.summary      = "Pacific is an iOS bootstrap framework"
 
   # This description is used to generate tags and improve search results.
@@ -137,9 +137,12 @@ Pod::Spec.new do |s|
 
   s.dependency "UIColor_Hex_Swift"
   s.dependency "Atlantis"
+  s.dependency "ObjectMapper"
   s.dependency "Socket.IO-Client-Swift"
   s.dependency "Alamofire", "3.2.1"
   s.dependency "SwiftyJSON"
+  s.dependency "ObjectMapper"
+  s.dependency "SwiftyTimer"
   s.dependency "SwiftDate"
   s.dependency "Neon"
   s.dependency "AsyncSwift"

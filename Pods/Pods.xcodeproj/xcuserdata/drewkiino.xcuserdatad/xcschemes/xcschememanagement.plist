@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pacific.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyTimer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Tide.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -78,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>2620F12C1176436B3B3784520F311BC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F5480B26F899BBD459DD0B121CB5F87</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,6 +132,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C8F54543305BD95F34FAB796C9CAAFCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D1DC35DB2C695031A72543555FB23729</key>
 		<dict>
 			<key>primary</key>
@@ -127,12 +147,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8F4E8CEB1225C3C67D5DEB04A06B746</key>
+		<key>F6C7137AC722DCBAB08EA5FB62689A24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD84115B325DF4342A363845749C0148</key>
+		<key>F8F4E8CEB1225C3C67D5DEB04A06B746</key>
 		<dict>
 			<key>primary</key>
 			<true/>

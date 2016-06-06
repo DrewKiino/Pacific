@@ -29,11 +29,10 @@ pod 'Alamofire', '3.2.1'
 
 # json libs
 pod 'SwiftyJSON'
-# pod 'ObjectMapper'
-# pod 'Unbox'
+pod 'ObjectMapper', '1.1.5'
 
 # service libs
-# pod 'SwiftyTimer'
+pod 'SwiftyTimer'
 pod 'SwiftDate'
 
 # UI libs
