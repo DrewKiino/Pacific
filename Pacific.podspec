@@ -141,7 +141,6 @@ Pod::Spec.new do |s|
   s.dependency "Socket.IO-Client-Swift"
   s.dependency "Alamofire", "3.2.1"
   s.dependency "SwiftyJSON"
-  s.dependency "ObjectMapper"
   s.dependency "SwiftyTimer"
   s.dependency "SwiftDate"
   s.dependency "Neon"
