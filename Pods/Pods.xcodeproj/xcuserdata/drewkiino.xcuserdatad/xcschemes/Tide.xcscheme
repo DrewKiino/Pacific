@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D69D1749DDEE87FE337D43FA64CB1710'
+               BlueprintIdentifier = '2160053CEC4DCFE9E28476FDA517D85D'
                BlueprintName = 'Tide'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Tide.framework'>

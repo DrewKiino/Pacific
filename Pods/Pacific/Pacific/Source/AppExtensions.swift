@@ -192,32 +192,6 @@ extension String {
     // WHY add a modifier? because at large texts, textview height will always return the height minus some lines
     // for some reason, so we compensate by adding the height of line which justly estimates around this number
   }
-  
-  func height(width: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat{
-    let height = self.boundingRectWithSize(CGSize(width: width, height: CGFloat.max), options:
-      NSStringDrawingOptions.UsesLineFragmentOrigin,
-      attributes: [
-        NSFontAttributeName: font
-      ],
-      context: nil
-      ).height
-    return (height * 1.12) + (self.width(height) > width - 128 ? 24 : 0)
-    // WHY add a modifier? because at large texts, textview height will always return the height minus some lines
-    // for some reason, so we compensate by adding the height of line which justly estimates around this number
-  }
-  
-  func width(height: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat {
-    let width = self.boundingRectWithSize(CGSize(width: CGFloat.max, height: height), options:
-      NSStringDrawingOptions.UsesLineFragmentOrigin,
-      attributes: [
-        NSFontAttributeName: font
-      ],
-      context: nil
-      ).width
-    return width
-    // WHY add a modifier? because at large texts, textview height will always return the height minus some lines
-    // for some reason, so we compensate by adding the height of line which justly estimates around this number
-  }
 }
 
 extension UIImageView {

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pacific.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pantry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,22 +72,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2160053CEC4DCFE9E28476FDA517D85D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2620F12C1176436B3B3784520F311BC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3CF601EF99A092CFBE64392781085C6F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>42EB5ABA3395D1D5079E0BAF9BF7C8E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4C761C84E192483EDF4ECC98E650E70A</key>
+		<key>437012B4E4E7A5FC3357266543BC557D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5385151188A4B4DBBF0821E4D52C567F</key>
+		<key>523A2EFB11A61E2E6092898E46EE495B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92825EE96A41015470DBA9A8466F60E8</key>
+		<key>9C81512A9A26B1BB0D935A3B98F1EB0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A71C039EE4C1D2CD83756D8A5E51BA3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1E8BA1868959D926AD1A4505BFA4DCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D69D1749DDEE87FE337D43FA64CB1710</key>
+		<key>D7D638922A798DC0536F0DC9B7429DA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0173143E7146A39D15D174BEFB12C03</key>
+		<key>F8F4E8CEB1225C3C67D5DEB04A06B746</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FAEB6CAC16424C03B8D08F6F64EF9782</key>
+		<key>FD84115B325DF4342A363845749C0148</key>
 		<dict>
 			<key>primary</key>
 			<true/>

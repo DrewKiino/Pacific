@@ -1,0 +1,6 @@
+framework module Pacific {
+  umbrella header "Pacific-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,6 +3,18 @@ PODS:
   - AsyncSwift (1.7.2)
   - Atlantis (0.1.1)
   - Neon (0.2.0)
+  - Pacific (0.0.1):
+    - Alamofire (= 3.2.1)
+    - AsyncSwift
+    - Atlantis
+    - Neon
+    - Pantry
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - SwiftDate
+    - SwiftyJSON
+    - Tide
+    - UIColor_Hex_Swift
   - Pantry (0.2.1)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -19,6 +31,7 @@ DEPENDENCIES:
   - AsyncSwift
   - Atlantis
   - Neon
+  - Pacific
   - Pantry
   - SDWebImage
   - Socket.IO-Client-Swift
@@ -32,6 +45,7 @@ SPEC CHECKSUMS:
   AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
   Atlantis: 33d4c4c436b6af3b640c2c6b2317c72d1fb41f00
   Neon: c7de6b6186c31870a0cacab6e018d0641bd12dca
+  Pacific: d3cbabf5a9a443bae1856db053f114065f28091c
   Pantry: 433931c8f545dd3426ca7d09a4edd5afa89c6e01
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
@@ -40,6 +54,6 @@ SPEC CHECKSUMS:
   Tide: 0b38feb296b3fa90d3428b986398a0c8325032d1
   UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
 
-PODFILE CHECKSUM: c8a965212890970d6c86657581173d6d9082b2bb
+PODFILE CHECKSUM: aa765083eef5bb8372c3901885853f0f0ee32188
 
 COCOAPODS: 1.0.1
