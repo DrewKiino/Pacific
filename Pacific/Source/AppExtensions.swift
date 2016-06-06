@@ -167,7 +167,7 @@ extension UIViewController {
 
 extension String {
   
-  func height(width: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat{
+  public func height(width: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat{
     let height = self.boundingRectWithSize(CGSize(width: width, height: CGFloat.max), options:
       NSStringDrawingOptions.UsesLineFragmentOrigin,
       attributes: [
@@ -180,7 +180,7 @@ extension String {
     // for some reason, so we compensate by adding the height of line which justly estimates around this number
   }
   
-  func width(height: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat {
+  public func width(height: CGFloat, font: UIFont = UIFont.systemFontOfSize(12)) -> CGFloat {
     let width = self.boundingRectWithSize(CGSize(width: CGFloat.max, height: height), options:
       NSStringDrawingOptions.UsesLineFragmentOrigin,
       attributes: [
