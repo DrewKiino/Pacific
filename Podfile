@@ -4,12 +4,15 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
+workspace 'Pacific.xcworkspace'
+project 'Pacific.xcodeproj'
+
 use_frameworks!
 
 #####################################
 
 target 'Pacific' do
-  
+
 # color libs
 pod 'UIColor_Hex_Swift'
 
@@ -46,13 +49,3 @@ pod 'Tide'
 pod 'Pantry'
 
 end
-
-
-#####################################
-# unit testing
-
-# target '' do
-
-# end
-
-#####################################
