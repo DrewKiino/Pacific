@@ -16,7 +16,7 @@ target 'Pacific' do
 pod 'Pacific'
 
 # color libs
-pod 'UIColor_Hex_Swift'
+# pod 'UIColor_Hex_Swift'
 
 # logging libs
 pod 'Atlantis'
@@ -29,21 +29,20 @@ pod 'Alamofire', '3.2.1'
 
 # json libs
 pod 'SwiftyJSON'
-pod 'ObjectMapper', '1.1.5'
+# pod 'ObjectMapper', '1.1.5'
 
 # service libs
-pod 'SwiftyTimer'
 pod 'SwiftDate'
 
 # UI libs
-pod 'Neon'
+# pod 'Neon'
 
 # event handling
 pod 'AsyncSwift'
 
 # image libs
-pod 'SDWebImage'
-pod 'Tide'
+# pod 'SDWebImage'
+# pod 'Tide'
 
 # data storage libs
 # pod 'Pantry', :git => 'https://github.com/nickoneill/Pantry', :branch => 'master'

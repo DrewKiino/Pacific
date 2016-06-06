@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Pacific"
-  s.version      = "0.0.5"  
+  s.version      = "0.0.6"  
   s.summary      = "Pacific is an iOS bootstrap framework"
 
   # This description is used to generate tags and improve search results.
@@ -135,18 +135,12 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  s.dependency "UIColor_Hex_Swift"
   s.dependency "Atlantis"
-  s.dependency "ObjectMapper", "1.1.5"
   s.dependency "Socket.IO-Client-Swift"
   s.dependency "Alamofire", "3.2.1"
   s.dependency "SwiftyJSON"
-  s.dependency "SwiftyTimer"
   s.dependency "SwiftDate"
-  s.dependency "Neon"
   s.dependency "AsyncSwift"
-  s.dependency "SDWebImage"
-  s.dependency "Tide"
   s.dependency "Pantry"
   
 end
