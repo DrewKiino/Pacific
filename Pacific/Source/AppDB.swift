@@ -12,7 +12,7 @@ import Async
 
 extension App {
   
-  private static func _write<T: StorableDefaultType>(object: T?, key: String) -> T? {
+  public static func write<T: StorableDefaultType>(object: T?, key: String) -> T? {
     if let object = object {
       Pantry.pack(object, key: key)
       return object
@@ -21,12 +21,12 @@ extension App {
     }
   }
   
-  private static func _read<T: StorableDefaultType>(key: String) -> T? {
+  public static func read<T: StorableDefaultType>(key: String) -> T? {
     return Pantry.unpack(key)
   }
   
-  private static func _delete<T: StorableDefaultType>(key: String) -> T? {
-    if let object = App._read("Test") as T! {
+  public static func delete<T: StorableDefaultType>(key: String) -> T? {
+    if let object = App.read("Test") as T! {
       Pantry.expire(key)
       return object
     } else {
@@ -34,15 +34,15 @@ extension App {
     }
   }
   
-  public static func write(string: String?, key: String) -> String? {
-    return _write(string, key: key)
+  public static func writeString(string: String?, key: String) -> String? {
+    return write(string, key: key)
   }
   
-  public static func read(key: String) -> String? {
-    return _read(key)
+  public static func readString(key: String) -> String? {
+    return read(key)
   }
   
-  public static func delete(key: String) -> String? {
-    return _delete(key)
+  public static func deleteString(key: String) -> String? {
+    return delete(key)
   }
 }
