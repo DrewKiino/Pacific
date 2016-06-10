@@ -1,7 +1,7 @@
 
 ![GitHub Logo](pacific-logo.png)
 
-A set of powerful frameworks to help bootstrap start-app grade apps
+A set of frameworks to help bootstrap start-app grade apps
 
 # Features
 
