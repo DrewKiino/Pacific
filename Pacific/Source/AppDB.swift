@@ -8,7 +8,6 @@
 
 import Foundation
 import Pantry
-import Async
 
 extension App {
   
