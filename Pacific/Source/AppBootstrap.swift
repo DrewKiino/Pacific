@@ -26,7 +26,7 @@ public struct App {
                         SERVER URL
 
 ***************************************************************/
-  public static let ServerURL: String! = AppBootstrap.Singleton.ServerURL
+  public static let ServerURL: String! = App.Singleton.ServerURL
 /**************************************************************
 
                         SCREEN SIZE
@@ -39,22 +39,20 @@ public struct App {
 
 ***************************************************************/
   public static var isProduction: Bool = false
-}
 /**************************************************************
  
                         APP BOOTSTRAP CLASS
  
  ***************************************************************/
-public class AppBootstrap {
   
   private struct Singleton {
     private static var ServerURL: String?
   }
   
-  public class func start(
+  public static func start(
     inout window window: UIWindow?,
     rootView: UIViewController?,
-    serverUrl: String,
+    serverUrl: String = "",
     isProduction: Bool = false
   ) {
     
@@ -79,4 +77,27 @@ public class AppBootstrap {
     Socket.sharedInstance().connect()
   }
 }
-
+/**************************************************************
+ 
+                      APP BOOTSTRAP SUBCLASSES
+ 
+ ***************************************************************/
+public class BasicView: UIView {
+  
+  public init() {
+    super.init(frame: CGRectZero)
+    setup()
+  }
+  
+  public override init(frame: CGRect) {
+    super.init(frame: frame)
+    setup()
+  }
+  
+  public required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  public func setup() {}
+}

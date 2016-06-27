@@ -45,6 +45,7 @@ public class Socket {
   }
   
   public func connect(execute: (() -> Void)? = nil) {
+    if App.ServerURL.isEmpty { return }
     // reset all handlers
     socket.removeAllHandlers()
     // subscribe to default streams
