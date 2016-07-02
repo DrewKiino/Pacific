@@ -1,8 +1,6 @@
 
 ![GitHub Logo](pacific-logo.png)
 
-# Foreword
-
 First off, *super mega fucking props* to the people who made these awesome libraries, and second, some of these were made personally by me as well!
 
 # Pacific
