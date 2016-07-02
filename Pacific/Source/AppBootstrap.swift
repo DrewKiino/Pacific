@@ -126,6 +126,11 @@ public class BasicCell: UITableViewCell {
     setup()
   }
   
+  public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    super.init(style: style, reuseIdentifier: reuseIdentifier)
+    setup()
+  }
+  
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setup()
