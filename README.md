@@ -29,7 +29,7 @@ Namely, these frameworks are as follows...
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
-*This framework is stand-alone because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's **bootstrap theme**.*
+*This framework is a stand-alone repository because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's **bootstrap theme**.*
 
 ```pod 'Tide'```
 
