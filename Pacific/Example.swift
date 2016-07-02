@@ -37,12 +37,12 @@ public class Example {
     // emit strings
     App.emit("iOS.Message", object: "Hello, World!")
     
-    // emit json objets
+    // emit json objects
     App.emit("iOS.Parcel", objects: [
       "name": "Steven",
       "age": 27,
       "title": "iOS Developer",
-      ] as [ String: AnyObject] )
+    ] as [ String: AnyObject] )
     
     
     App.POST("/user/findOne", parameters: [ "_id": "12345" ]) { [weak self] json, error in
