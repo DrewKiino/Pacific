@@ -35,6 +35,12 @@ Namely, these frameworks are as follows...
 
 *This framework is a stand-alone repository because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's* **bootstrap theme**.
 
+```Tide``` leverages the power of ```SDWebImage```'s background image downloading with ```Toucan```'s image manipulation with a touch of parallel block processing to make sure none of the computations intervene with the main thread. Anything and everything for image processing.
+
+Check out the [repository](https://github.com/DrewKiino/Tide) for an in-depth look at its features.
+
+**Installation**:
+
 ```pod 'Tide'```
 
 ![alt text](images/tide-simple-example.png)
@@ -49,7 +55,7 @@ Within the ```AppDelegate.swift``` file...
 
 In my humble opinion, I think storyboards are **not** the way to go. The interface is clunky, the segue system is severely limiting, messy, and prototyping is very tedious if done through storyboards. 
 
-For that reason alone, I chose to develop apps programmatically by overriding the initial root view so all the layouts and prototyping is done through code.
+For that reason alone, I chose to develop apps programmatically by overriding the initial root view so all the layouts and prototyping is done through code. 
 
 It's not that bad when you get used to it, some might even consider that *faster* ;)
 
