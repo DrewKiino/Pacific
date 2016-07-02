@@ -14,6 +14,17 @@ public class Example {
   public func test() {
     
     
+    App.Screen.width
+    App.Screen.height
+    
+    App.ServerURL
+    
+    if App.isProduction {
+      // do something
+    }
+    
+    
+    
     // returns a jsonified response from the server
     App.on("Server.Message") { [weak self] json in
       log.debug(json)
@@ -74,7 +85,7 @@ public class Example {
   
   public func setAsDefaultUser(user: User) {}
   public func appendMessageToTableView(message: String?) {}
-  public func updateUI(status: Int?)
+  public func updateUI(status: Int?) {}
 }
 
 public class User { init(name: String?, age: Int?) {} }
