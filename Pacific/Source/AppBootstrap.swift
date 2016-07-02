@@ -82,6 +82,22 @@ public struct App {
                       APP BOOTSTRAP SUBCLASSES
  
  ***************************************************************/
+public class BasicViewController: UIViewController {
+  
+  public init() {
+    super.init(nibName: nil, bundle: nil)
+    setup()
+  }
+  
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  public func setup() {
+    view.backgroundColor = .whiteColor()
+  }
+}
 public class BasicView: UIView {
   
   public init() {
@@ -103,20 +119,20 @@ public class BasicView: UIView {
     backgroundColor = .whiteColor()
   }
 }
-
-public class BasicViewController: UIViewController {
+public class BasicCell: UITableViewCell {
   
   public init() {
-    super.init(nibName: nil, bundle: nil)
+    super.init(style: .Default, reuseIdentifier: nil)
     setup()
   }
   
-  required public init?(coder aDecoder: NSCoder) {
+  public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setup()
   }
   
   public func setup() {
-    view.backgroundColor = .whiteColor()
+    backgroundColor = .whiteColor()
   }
 }
+
