@@ -43,6 +43,16 @@ public class Example {
       
       self?.setAsDefaultUser(user)
     }
+  
+    
+    let data = UIImagePNGRepresentation(UIImage(named: "Hamster.png")!)
+    
+    App.UPLOAD("/file/upload", data: data, key: "file") { [weak self] json, error in
+      
+      let status = json?["status"].int
+      
+      self?.updateUI(status)
+    }
     
     
     // CREATE/UPDATE
@@ -64,6 +74,7 @@ public class Example {
   
   public func setAsDefaultUser(user: User) {}
   public func appendMessageToTableView(message: String?) {}
+  public func updateUI(status: Int?)
 }
 
 public class User { init(name: String?, age: Int?) {} }

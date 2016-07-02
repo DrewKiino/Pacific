@@ -1,9 +1,15 @@
 
 ![GitHub Logo](pacific-logo.png)
 
+# Foreword
+
+First off, *super mega fucking props* to the people who made these awesome libraries, and second, some of these were made personally by me as well!
+
+# Pacific
+
 ```Pacific``` is a set of frameworks thoughtfully aggregated into in a single wrapper to help bootstrap iOS apps and allow for faster prototyping and design.
 
-Namely, the frameworks used are as follows...
+Namely, these frameworks are as follows...
 
 ## Http ~ [```Alamofire```](https://github.com/Alamofire/Alamofire) & [```SwiftyJSON```](https://github.com/SwiftyJSON/SwiftyJSON)
 
@@ -21,6 +27,18 @@ Namely, the frameworks used are as follows...
 
 ![alt text](images/socket-example.png)
 
+*These next few libraries are stand-alone repositories because I felt that they where significantly useful on their own. However, I still consider them part of the Pacific's **bootstrap theme**.*
+
+## Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
+
+```
+pod `Tide`
+```
+
+![alt text](images/tide-simple-example.png)
+
+![alt text](images/tide-button-example.png)
+
 
 
 
@@ -34,9 +52,11 @@ Namely, the frameworks used are as follows...
 
 # Setup
 
-``` Swift
+```
 pod 'Pacific'
 ```
+
+
 
 # Author
 Andrew Aquino, [TotemV.LLC](http://totemv.com/)
