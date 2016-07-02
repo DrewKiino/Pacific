@@ -27,6 +27,10 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/sockets-example.png)
 
+### Convenience Global Variables
+
+![alt text](images/convenience-example.png)
+
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
 *This framework is a stand-alone repository because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's* **bootstrap theme**.
@@ -37,11 +41,9 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/tide-button-example.png)
 
-### Globals
-
-![alt text](images/convenience-example.png)
-
 # Bootstrap Setup
+
+Within the ```AppDelegate.swift``` file...
 
 ![alt text](images/setup-example.png)
 
