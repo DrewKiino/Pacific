@@ -25,7 +25,7 @@ Namely, these frameworks are as follows...
 
 ### Sockets ~ [```Socket.IO```](https://github.com/socketio/socket.io-client-swift)
 
-![alt text](images/socket-example.png)
+![alt text](images/sockets-example.png)
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
