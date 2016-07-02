@@ -67,7 +67,9 @@ Especially with this god given [framework](https://github.com/mamaral/Neon).
 
 *If your work is presented in this framework and you do not want it to be, please let me know at:*
 
- ```andrew@totemv.com```
+ ```
+ andrew@totemv.com
+ ```
 
 # License
 
