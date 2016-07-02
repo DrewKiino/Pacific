@@ -20,6 +20,5 @@ Pod::Spec.new do |s|
   s.dependency "Pantry"
   s.dependency "Socket.IO-Client-Swift"
   s.dependency "SwiftyJSON"
-  s.dependency "SwiftDate"
 
 end

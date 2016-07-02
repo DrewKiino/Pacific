@@ -5,9 +5,29 @@
 
 Namely, the frameworks used are as follows...
 
-```Alamofire``` & ```SwiftyJSON``` -> **HTTP** services
+## Http ~ [```Alamofire```](https://github.com/Alamofire/Alamofire) & [```SwiftyJSON```](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ![alt text](images/http-example.png)
+
+## Logging ~ [```Atlantis```](https://github.com/DrewKiino/Atlantis) 
+
+![alt text](https://github.com/DrewKiino/Atlantis/blob/master/atlantis-screenshot.png)
+
+## Persistent Data ~ [```Pantry```](https://github.com/nickoneill/Pantry)
+
+![alt text](images/crud-example.png)
+
+## Sockets ~ [```Socket.IO```](https://github.com/socketio/socket.io-client-swift)
+
+![alt text](images/socket-example.png)
+
+
+
+
+
+
+
+
 
 
 

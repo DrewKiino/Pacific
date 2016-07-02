@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Pacific
 
 class PacificTests: XCTestCase {
     

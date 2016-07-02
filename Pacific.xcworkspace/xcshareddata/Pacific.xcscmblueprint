@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DC3F0C5858F5AE4DF8FC838006C8CD433A0B249D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "17CA69781503462AF4718C0473E9F318F24F6E35" : 0,
+    "5E1378953CB26EEB179F030EEB689ADDE18095D2" : 0,
+    "DC3F0C5858F5AE4DF8FC838006C8CD433A0B249D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7215C91E-6DCE-492F-AC30-ABA92ABFF292",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "17CA69781503462AF4718C0473E9F318F24F6E35" : "Tide\/",
+    "5E1378953CB26EEB179F030EEB689ADDE18095D2" : "Desktop\/Github\/Atlantis\/",
+    "DC3F0C5858F5AE4DF8FC838006C8CD433A0B249D" : "Pacific\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Pacific",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Pacific.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DrewKiino\/Tide.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17CA69781503462AF4718C0473E9F318F24F6E35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DrewKiino\/Atlantis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E1378953CB26EEB179F030EEB689ADDE18095D2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DrewKiino\/Pacific.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC3F0C5858F5AE4DF8FC838006C8CD433A0B249D"
+    }
+  ]
+}

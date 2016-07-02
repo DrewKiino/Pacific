@@ -3,28 +3,47 @@ PODS:
   - AsyncSwift (1.7.2)
   - Atlantis (0.1.1)
   - Pantry (0.2.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - Socket.IO-Client-Swift (6.1.4)
+  - Storm (0.0.7):
+    - AsyncSwift
+    - Atlantis
+    - SwiftDate
   - SwiftDate (3.0.8)
   - SwiftyJSON (2.3.2)
+  - Tide (1.1.5):
+    - AsyncSwift
+    - SDWebImage
+    - Storm
 
 DEPENDENCIES:
   - Alamofire (= 3.2.1)
-  - AsyncSwift
-  - Atlantis
+  - Atlantis (from `/Users/drewkiino/Desktop/Github/Atlantis`)
   - Pantry
   - Socket.IO-Client-Swift
-  - SwiftDate
   - SwiftyJSON
+  - Tide (from `/Users/drewkiino/Tide`)
+
+EXTERNAL SOURCES:
+  Atlantis:
+    :path: /Users/drewkiino/Desktop/Github/Atlantis
+  Tide:
+    :path: /Users/drewkiino/Tide
 
 SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
   AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
   Atlantis: 33d4c4c436b6af3b640c2c6b2317c72d1fb41f00
   Pantry: 433931c8f545dd3426ca7d09a4edd5afa89c6e01
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   Socket.IO-Client-Swift: 79dfbbe170d7816c84e2d3cc2baa3d227549e067
+  Storm: 2db726b2fbb967bc6f4a4bca76c7dfcf38cb911f
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Tide: a5e29141d9e84185ce74f831d28559a3df05e8b1
 
-PODFILE CHECKSUM: 4beeb910129d770dac5fc024f3fb549a40000d2a
+PODFILE CHECKSUM: 7e95175c4e4cb2c7a0b82f64183a8b7142e83e55
 
 COCOAPODS: 1.0.1

@@ -1,0 +1,6 @@
+framework module Storm {
+  umbrella header "Storm-umbrella.h"
+
+  export *
+  module * { export * }
+}
