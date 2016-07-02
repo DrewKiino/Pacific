@@ -27,7 +27,7 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/sockets-example.png)
 
-### Convenience Global Variables
+### Convenience Global Variables ~
 
 ![alt text](images/convenience-example.png)
 
