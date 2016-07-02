@@ -3,7 +3,7 @@ PODS:
   - AsyncSwift (1.7.2)
   - Atlantis (0.1.1)
   - Pantry (0.2.1)
-  - Socket.IO-Client-Swift (6.1.2)
+  - Socket.IO-Client-Swift (6.1.4)
   - SwiftDate (3.0.8)
   - SwiftyJSON (2.3.2)
 
@@ -21,7 +21,7 @@ SPEC CHECKSUMS:
   AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
   Atlantis: 33d4c4c436b6af3b640c2c6b2317c72d1fb41f00
   Pantry: 433931c8f545dd3426ca7d09a4edd5afa89c6e01
-  Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
+  Socket.IO-Client-Swift: 79dfbbe170d7816c84e2d3cc2baa3d227549e067
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

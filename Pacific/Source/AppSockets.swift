@@ -12,7 +12,7 @@ import SwiftyJSON
 
 public typealias SocketResponseBlock  = (json: JSON) -> Void
 
-public class Socket {
+public class Socket: NSObject, NSURLSessionDelegate {
   
   private struct Singleton {
     static let socket = Socket()
@@ -97,7 +97,7 @@ public class Socket {
           "room": UIDevice.currentDevice().identifierForVendor?.UUIDString ?? ""
         ] as [String: AnyObject]),
         .Log(false),
-        .ForcePolling(false),
+        .ForcePolling(true),
         .Cookies([
           NSHTTPCookie(properties: [
             NSHTTPCookieDomain: UIDevice.currentDevice().identifierForVendor!.UUIDString,
@@ -106,9 +106,9 @@ public class Socket {
             NSHTTPCookieValue: UIDevice.currentDevice().identifierForVendor!.UUIDString,
             NSHTTPCookieSecure: true,
             NSHTTPCookieExpires: NSDate(timeIntervalSinceNow: 60)
-            ])!]
+          ])!]
         ),
-        .Secure(false)
+        .Secure(false),
 //        .Secure(App.isProduction)
       ]
     )

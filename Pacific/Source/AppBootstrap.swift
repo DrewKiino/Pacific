@@ -99,5 +99,24 @@ public class BasicView: UIView {
     setup()
   }
   
-  public func setup() {}
+  public func setup() {
+    backgroundColor = .whiteColor()
+  }
+}
+
+public class BasicViewController: UIViewController {
+  
+  public init() {
+    super.init(nibName: nil, bundle: nil)
+    setup()
+  }
+  
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  public func setup() {
+    view.backgroundColor = .whiteColor()
+  }
 }
