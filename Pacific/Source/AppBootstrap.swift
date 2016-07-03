@@ -119,7 +119,20 @@ public class BasicView: UIView {
     backgroundColor = .whiteColor()
   }
 }
+
 public class BasicCell: UITableViewCell {
+  
+  public var topBorder: UIView?
+  public var bottomBorder: UIView?
+  
+  private var buttonContainer: UIButton?
+  
+  public var tappedHandler: ((BasicCell) -> Void)?
+  public var pressedHandler: ((BasicCell) -> Void)?
+  public var pressedExitHandler: ((BasicCell) -> Void)?
+  
+  public var toggleHandler: ((BasicCell) -> Void)?
+  public var isActive: Bool = false
   
   public init() {
     super.init(style: .Default, reuseIdentifier: nil)
@@ -137,7 +150,81 @@ public class BasicCell: UITableViewCell {
   }
   
   public func setup() {
+    
     backgroundColor = .whiteColor()
+    
+    topBorder = UIView()
+    topBorder?.backgroundColor = .lightPlaceholderColor()
+    topBorder?.hidden = true
+    addSubview(topBorder!)
+    
+    bottomBorder = UIView()
+    bottomBorder?.backgroundColor = .lightPlaceholderColor()
+    addSubview(bottomBorder!)
+    
+    buttonContainer = UIButton()
+    buttonContainer?.addTarget(self, action: #selector(self.tapped), forControlEvents: .TouchUpInside)
+    buttonContainer?.addTarget(self, action: #selector(self.pressed), forControlEvents: .TouchDown)
+    buttonContainer?.addTarget(self, action: #selector(self.pressedExit), forControlEvents: .TouchDragExit)
+    addSubview(buttonContainer!)
+  }
+  
+  public override func layoutSubviews() {
+    super.layoutSubviews()
+    
+    topBorder?.frame = CGRectMake(0, 0, frame.width, 1)
+    bottomBorder?.frame = CGRectMake(0, frame.height - 1, frame.width, 1)
+    
+    buttonContainer?.frame = CGRectMake(0, 0, frame.width, frame.height)
+  }
+  
+  public func tapped() {
+    tappedHandler?(self)
+    isActive = !isActive
+  }
+  
+  public func pressed() {
+    pressedHandler?(self)
+  }
+  
+  public func pressedExit() {
+    pressedExitHandler?(self)
+    isActive = !isActive
   }
 }
+/**************************************************************
+ 
+                      APP BOOTSTRAP EXTENSIONS
+ 
+ ***************************************************************/
+extension UIColor {
+  
+  public class func textColor() -> UIColor {
+    return UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1.0)
+  }
+  
+  public class func lightPlaceholderColor() -> UIColor {
+    return UIColor(red: 225/255, green: 225/255, blue: 220/255, alpha: 1.0)
+  }
+  
+  public class func darkPlaceholderColor() -> UIColor {
+    return UIColor(red: 195/255, green: 195/255, blue: 190/255, alpha: 1.0)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

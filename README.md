@@ -25,9 +25,51 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/sockets-example.png)
 
-### Convenience Global Variables ~
+### Bootstrap Global Variables ~
 
 ![alt text](images/convenience-example.png)
+
+### Convenience Sublcasses
+
+```Swift
+public class BasicViewController: UIViewController {
+  
+  public init() {
+    super.init(nibName: nil, bundle: nil)
+    setup()
+  }
+  
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  public func setup() {
+    view.backgroundColor = .whiteColor()
+  }
+}
+public class BasicView: UIView {
+  
+  public init() {
+    super.init(frame: CGRectZero)
+    setup()
+  }
+  
+  public override init(frame: CGRect) {
+    super.init(frame: frame)
+    setup()
+  }
+  
+  public required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  public func setup() {
+    backgroundColor = .whiteColor()
+  }
+}
+```
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
