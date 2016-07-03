@@ -45,7 +45,7 @@ public class Socket: NSObject, NSURLSessionDelegate {
   }
   
   public func connect(execute: (() -> Void)? = nil) {
-    if App.ServerURL.isEmpty { return }
+    if App.serverURL.isEmpty { return }
     // reset all handlers
     socket.removeAllHandlers()
     // subscribe to default streams
@@ -91,7 +91,7 @@ public class Socket: NSObject, NSURLSessionDelegate {
   
   public class func createNewSocket(connectParams: [String :AnyObject]? = nil) -> SocketIOClient {
     let socket = SocketIOClient(
-      socketURL: NSURL(string: App.ServerURL) ?? NSURL(),
+      socketURL: NSURL(string: App.serverURL) ?? NSURL(),
       options: [
         .ConnectParams(connectParams ?? [
           "room": UIDevice.currentDevice().identifierForVendor?.UUIDString ?? ""

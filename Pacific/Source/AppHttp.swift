@@ -19,7 +19,7 @@ extension App {
     if let data = data, let key = key {
       Alamofire.upload(
         .POST,
-        App.ServerURL + endpoint,
+        App.serverURL + endpoint,
         headers: [
           "key": key
         ] as [ String: String ],
@@ -56,7 +56,7 @@ extension App {
   }
   
   public static func POST(endPoint: String, parameters: [ String: AnyObject ], responseBlock: HttpResponseBlock) {
-    Alamofire.request(.POST, App.ServerURL + endPoint, parameters: parameters)
+    Alamofire.request(.POST, App.serverURL + endPoint, parameters: parameters)
     .response { (req, res, data, error) in
       if let error = error {
         log.error(error)
@@ -68,7 +68,7 @@ extension App {
   }
   
   public static func GET(endPoint: String, parameters: [ String: AnyObject ]? = nil, responseBlock: HttpResponseBlock) {
-    Alamofire.request(.GET, App.ServerURL + endPoint, parameters: parameters)
+    Alamofire.request(.GET, App.serverURL + endPoint, parameters: parameters)
     .response { (req, res, data, error) in
       if let error = error {
         log.error(error)

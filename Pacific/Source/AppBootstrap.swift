@@ -26,13 +26,13 @@ public struct App {
                         SERVER URL
 
 ***************************************************************/
-  public static let ServerURL: String! = App.Singleton.ServerURL
+  public static var serverURL: String = ""
 /**************************************************************
 
                         SCREEN SIZE
 
 ***************************************************************/
-  public static let Screen = UIScreen.mainScreen().bounds
+  public static var screen = UIScreen.mainScreen().bounds
 /**************************************************************
 
                         ENV VARS
@@ -41,27 +41,31 @@ public struct App {
   public static var isProduction: Bool = false
 /**************************************************************
  
+                        FONTS
+ 
+ ***************************************************************/
+  public static var fontSize: CGFloat = 12.0
+/**************************************************************
+ 
                         APP BOOTSTRAP CLASS
  
  ***************************************************************/
-  
-  private struct Singleton {
-    private static var ServerURL: String?
+  public static func currentDevice() -> UIUserInterfaceIdiom {
+    return UIDevice.currentDevice().userInterfaceIdiom
   }
   
-  public static func start(
-    inout window window: UIWindow?,
-    rootView: UIViewController?,
-    serverUrl: String = "",
-    isProduction: Bool = false
-  ) {
+  public static func iPhoneOnly(handler: (() -> Void)) {
+    if currentDevice() == .Phone { handler() }
+  }
+  
+  public static func iPadOnly(handler: (() -> Void)) {
+    if currentDevice() == .Pad { handler() }
+  }
+  
+  public static func start( inout window window: UIWindow?, rootView: UIViewController?) {
     
     // set logging config
     Atlantis.Configuration.hasColoredLogs = true
-    
-    Singleton.ServerURL = serverUrl
-    
-    App.isProduction = isProduction
     
     if let rootView = rootView {
       // config rootview

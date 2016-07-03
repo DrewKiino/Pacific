@@ -1,4 +1,4 @@
-#
+
 Pod::Spec.new do |s|
  
   s.platform = :ios
@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.name = "Pacific"
   s.summary = "Pacific is an iOS bootstrap framework"
   s.requires_arc = true
-  s.version = "1.0.2"
+  s.version = "1.0.6"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "[Andrew Aquino]" => "[andrew@totemv.com]" }
   s.homepage = 'http://totemv.com/drewkiino.github.io'

@@ -212,5 +212,30 @@ extension UIView {
       }
     }
   }
+  
+  public func getImage() -> UIImage? {
+    UIGraphicsBeginImageContext(frame.size)
+    if let context = UIGraphicsGetCurrentContext() {
+      layer.renderInContext(context)
+    }
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image
+  }
+}
+
+extension UIImageView {
+  
+  public func getImageFrame() -> CGRect? {
+    if let imageSize = image?.size {
+      return CGRectMake(
+        frame.origin.x + ((frame.width - imageSize.width) / 2),
+        frame.origin.y + ((frame.height - imageSize.height) / 2),
+        min(frame.width, imageSize.width),
+        min(frame.height, imageSize.height)
+      )
+    }
+    return nil
+  }
 }
 

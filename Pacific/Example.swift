@@ -13,17 +13,9 @@ public class Example {
   
   public func test() {
     
-    
-    App.Screen.width
-    App.Screen.height
-    
-    App.ServerURL
-    
     if App.isProduction {
       // do something
     }
-    
-    
     
     // returns a jsonified response from the server
     App.on("Server.Message") { [weak self] json in
