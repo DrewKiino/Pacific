@@ -29,9 +29,23 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/convenience-example.png)
 
-Pacific also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, which should be initialized in the ```AppDelegate.swift``` file, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses.
+Pacific also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, carefully selected ```UIColor``` palettes, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses, literally named ```BasicView```, ```BasicViewController```, and ```BasicCell``` respectively.
 
 For custom initalizations, these subclasses all come with an overridable ```setup()``` method. This method is executes regardless of how you initialize these subclasses. This is done so you wouldn't have to create the required ```aDecoder``` initializations or rewrite the same initialization steps for every new subclass. In addition, using the ```convenience``` keyword works too.
+
+#### - BasicCell -
+
+```BasicCell``` is a subclass of ```UITableViewCell```. It comes with it's own ```topBorder``` and ```bottomBorder``` visualizations which can be hidden at your discretion as well as a couple of user-interaction handler blocks.
+
+These are:
+
+```Swift
+public var tappedHandler: ((BasicCell) -> Void)?
+public var pressedHandler: ((BasicCell) -> Void)?
+public var pressedExitHandler: ((BasicCell) -> Void)?
+```
+
+Which are called respectively if the cell is tapped, pressed, or is pressed and exited out of it's touch domain. You can tell if a cell is active or not by accessing the cell's ```isActive``` boolean variable.
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
@@ -54,6 +68,8 @@ Check out the [repository](https://github.com/DrewKiino/Tide) for an in-depth lo
 ![alt text](images/setup-example.png)
 
 **Note**: the setup is done within the ```AppDelegate.swift``` file.
+
+# Personal Thoughts
 
 In my humble opinion, I think storyboards are **not** the way to go. The interface is clunky, the segue system is severely limiting, messy, and prototyping is very tedious if done through storyboards. 
 
