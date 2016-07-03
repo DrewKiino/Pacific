@@ -31,7 +31,7 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/convenience-example.png)
 
-```Pacific``` also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, carefully selected ```UIColor``` palettes, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses, literally named ```BasicView```, ```BasicViewController```, and ```BasicCell``` respectively.
+```Pacific``` also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses, literally named ```BasicView```, ```BasicViewController```, and ```BasicCell``` respectively.
 
 For custom initalizations, these subclasses all come with an overridable ```setup()``` method. This method is executes regardless of how you initialize these subclasses. This is done so you wouldn't have to create the required ```aDecoder``` initializations or rewrite the same initialization steps for every new subclass. In addition, using the ```convenience``` keyword works too.
 
@@ -48,6 +48,18 @@ public var pressedExitHandler: ((BasicCell) -> Void)?
 ```
 
 Which are called respectively if the cell is tapped, pressed, or is pressed and exited out of it's touch domain. You can tell if a cell is active or not by accessing the cell's ```isActive``` boolean variable.
+
+#### - Custom Colors -
+
+There are three custom grayscale colors that are meant to mimic a designer's wireframe color palette:
+
+```Swift
+UIColor.textColor()
+
+UIColor.lightPlaceholderColor()
+
+UIColor.darkPlaceholderColor()
+```
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
 
