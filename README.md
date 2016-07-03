@@ -3,6 +3,8 @@
 
 First off, *super mega fucking props* to the people who made these awesome libraries, and second, some of these were made personally by me as well!
 
+```pod 'Pacific'```
+
 # Pacific
 
 ```Pacific``` is a set of frameworks thoughtfully aggregated into in a single wrapper to help bootstrap iOS apps and allow for faster prototyping and design.
