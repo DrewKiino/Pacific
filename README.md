@@ -9,17 +9,19 @@ First off, *super mega fucking props* to the people who made these awesome libra
 
 ```Pacific``` is a set of frameworks and libraries thoughtfully aggregated into in a single wrapper to help bootstrap iOS apps and allow for faster prototyping and design.
 
-Namely, these frameworks are as follows...
+They are directly accessible through the ```App``` class. **Note**: You do not need to initailize the ```App``` class as these extensions are all at ```class``` scope.
 
-### Http ~ [```Alamofire```](https://github.com/Alamofire/Alamofire) & [```SwiftyJSON```](https://github.com/SwiftyJSON/SwiftyJSON)
+## What's in it?
+
+### - Http - [```Alamofire```](https://github.com/Alamofire/Alamofire) & [```SwiftyJSON```](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ![alt text](images/http-example.png)
 
-### Logging ~ [```Atlantis```](https://github.com/DrewKiino/Atlantis) 
+### - Logging - [```Atlantis```](https://github.com/DrewKiino/Atlantis) 
 
 ![alt text](https://github.com/DrewKiino/Atlantis/blob/master/atlantis-screenshot.png)
 
-### Persistent Data ~ [```Pantry```](https://github.com/nickoneill/Pantry)
+### - Persistent Data - [```Pantry```](https://github.com/nickoneill/Pantry)
 
 ![alt text](images/crud-example.png)
 
@@ -27,7 +29,23 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/sockets-example.png)
 
-### Bootstrap Code ~
+### - Image Processing - [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
+
+![alt text](images/tide-simple-example.png)
+
+![alt text](images/tide-button-example.png)
+
+*This framework is a stand-alone repository and would need to be* **installed separately**, *reason is, I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's* **bootstrap theme**.
+
+```Tide``` leverages the power of ```SDWebImage```'s background image downloading with ```Toucan```'s image manipulation with a touch of parallel block processing to make sure none of the computations intervene with the main thread. Anything and everything for image processing.
+
+Check out the [repository](https://github.com/DrewKiino/Tide) for an in-depth look at its features.
+
+**Installation**:
+
+```pod 'Tide'```
+
+### - Bootstrap Code -
 
 ![alt text](images/convenience-example.png)
 
@@ -61,29 +79,13 @@ UIColor.lightPlaceholderColor()
 UIColor.darkPlaceholderColor()
 ```
 
-### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
-
-![alt text](images/tide-simple-example.png)
-
-![alt text](images/tide-button-example.png)
-
-*This framework is a stand-alone repository because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's* **bootstrap theme**.
-
-```Tide``` leverages the power of ```SDWebImage```'s background image downloading with ```Toucan```'s image manipulation with a touch of parallel block processing to make sure none of the computations intervene with the main thread. Anything and everything for image processing.
-
-Check out the [repository](https://github.com/DrewKiino/Tide) for an in-depth look at its features.
-
-**Installation**:
-
-```pod 'Tide'```
-
-# Bootstrap Setup
+## Bootstrap Setup
 
 ![alt text](images/setup-example.png)
 
 **Note**: the setup is done within the ```AppDelegate.swift``` file.
 
-# Personal Thoughts
+## Personal Thoughts
 
 In my humble opinion, I think storyboards are **not** the way to go. The interface is clunky, the segue system is severely limiting, messy, and prototyping is very tedious if done through storyboards. 
 
@@ -95,7 +97,7 @@ Especially with this god given [framework](https://github.com/mamaral/Neon).
 
 *Happy prototyping!*
 
-# Copyright
+## Copyright
 
 *If your work is presented in this framework and you do not want it to be, please let me know at:*
 
@@ -103,7 +105,7 @@ Especially with this god given [framework](https://github.com/mamaral/Neon).
  andrew@totemv.com
  ```
 
-# License
+## License
 
 Copyright (c) 2016 by [Andrew Aquino](http://totemv.com/drewkiino/), [TotemV.LLC](http://totemv.com/)
 
