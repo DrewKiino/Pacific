@@ -7,7 +7,7 @@ First off, *super mega fucking props* to the people who made these awesome libra
 
 # Pacific
 
-```Pacific``` is a set of frameworks thoughtfully aggregated into in a single wrapper to help bootstrap iOS apps and allow for faster prototyping and design.
+```Pacific``` is a set of frameworks and libraries thoughtfully aggregated into in a single wrapper to help bootstrap iOS apps and allow for faster prototyping and design.
 
 Namely, these frameworks are as follows...
 
