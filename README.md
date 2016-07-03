@@ -29,7 +29,7 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/convenience-example.png)
 
-Pacific also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, carefully selected ```UIColor``` palettes, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses, literally named ```BasicView```, ```BasicViewController```, and ```BasicCell``` respectively.
+```Pacific``` also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, carefully selected ```UIColor``` palettes, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses, literally named ```BasicView```, ```BasicViewController```, and ```BasicCell``` respectively.
 
 For custom initalizations, these subclasses all come with an overridable ```setup()``` method. This method is executes regardless of how you initialize these subclasses. This is done so you wouldn't have to create the required ```aDecoder``` initializations or rewrite the same initialization steps for every new subclass. In addition, using the ```convenience``` keyword works too.
 
