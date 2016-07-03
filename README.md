@@ -25,53 +25,19 @@ Namely, these frameworks are as follows...
 
 ![alt text](images/sockets-example.png)
 
-### Bootstrap Global Variables ~
+### Bootstrap Code ~
 
 ![alt text](images/convenience-example.png)
 
-### Convenience Sublcasses
+Pacific also comes with convenience variables and subclasses that aid with faster prototyping. These include accessing the screen's actual dimensions, the app's server url, which should be initialized in the ```AppDelegate.swift``` file, as well as ```UIView```, ```UIViewController```, and ```UITableViewCell``` subclasses.
 
-```Swift
-public class BasicViewController: UIViewController {
-  
-  public init() {
-    super.init(nibName: nil, bundle: nil)
-    setup()
-  }
-  
-  required public init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    setup()
-  }
-  
-  public func setup() {
-    view.backgroundColor = .whiteColor()
-  }
-}
-public class BasicView: UIView {
-  
-  public init() {
-    super.init(frame: CGRectZero)
-    setup()
-  }
-  
-  public override init(frame: CGRect) {
-    super.init(frame: frame)
-    setup()
-  }
-  
-  public required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    setup()
-  }
-  
-  public func setup() {
-    backgroundColor = .whiteColor()
-  }
-}
-```
+For custom initalizations, these subclasses all come with an overridable ```setup()``` method. This method is executes regardless of how you initialize these subclasses. This is done so you wouldn't have to create the required ```aDecoder``` initializations or rewrite the same initialization steps for every new subclass. In addition, using the ```convenience``` keyword works too.
 
 ### Image Processing ~ [```Tide```](https://github.com/DrewKiino/Tide), [```AsyncSwift```](), & [```SDWebImage```]()
+
+![alt text](images/tide-simple-example.png)
+
+![alt text](images/tide-button-example.png)
 
 *This framework is a stand-alone repository because I felt that it was significant enough to be useful on its own. However, I still consider it part of Pacific's* **bootstrap theme**.
 
@@ -83,15 +49,11 @@ Check out the [repository](https://github.com/DrewKiino/Tide) for an in-depth lo
 
 ```pod 'Tide'```
 
-![alt text](images/tide-simple-example.png)
-
-![alt text](images/tide-button-example.png)
-
 # Bootstrap Setup
 
-Within the ```AppDelegate.swift``` file...
-
 ![alt text](images/setup-example.png)
+
+**Note**: the setup is done within the ```AppDelegate.swift``` file.
 
 In my humble opinion, I think storyboards are **not** the way to go. The interface is clunky, the segue system is severely limiting, messy, and prototyping is very tedious if done through storyboards. 
 
