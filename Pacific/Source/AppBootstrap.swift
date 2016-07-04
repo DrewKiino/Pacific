@@ -113,12 +113,14 @@ public struct App {
     return UIDevice.currentDevice().userInterfaceIdiom
   }
   
-  public static func iPhoneOnly(handler: (() -> Void)) {
-    if currentDevice() == .Phone { handler() }
+  public static func iPhoneOnly<T>(handler: (() -> T)) -> T? {
+    if currentDevice() == .Phone { return handler() }
+    else { return nil }
   }
   
-  public static func iPadOnly(handler: (() -> Void)) {
-    if currentDevice() == .Pad { handler() }
+  public static func iPadOnly<T>(handler: (() -> T)) -> T? {
+    if currentDevice() == .Pad { return handler() }
+    else { return nil }
   }
   
   public static func start( inout window window: UIWindow?, rootView: UIViewController?) {
