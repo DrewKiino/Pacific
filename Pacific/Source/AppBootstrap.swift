@@ -88,6 +88,22 @@ public struct App {
   public static func boldFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     return UIFont(name: boldFontnames[font.hashValue], size: size * App.fontSizeModifier)
   }
+  /**************************************************************
+   
+                      COLORS
+   
+   ***************************************************************/
+  public static func textColor() -> UIColor {
+    return UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1.0)
+  }
+  
+  public static func lightPlaceholderColor() -> UIColor {
+    return UIColor(red: 225/255, green: 225/255, blue: 220/255, alpha: 1.0)
+  }
+  
+  public static func darkPlaceholderColor() -> UIColor {
+    return UIColor(red: 195/255, green: 195/255, blue: 190/255, alpha: 1.0)
+  }
 /**************************************************************
  
                         APP BOOTSTRAP CLASS
@@ -201,12 +217,12 @@ public class BasicCell: UITableViewCell {
     backgroundColor = .whiteColor()
     
     topBorder = UIView()
-    topBorder?.backgroundColor = .lightPlaceholderColor()
+    topBorder?.backgroundColor = App.lightPlaceholderColor()
     topBorder?.hidden = true
     addSubview(topBorder!)
     
     bottomBorder = UIView()
-    bottomBorder?.backgroundColor = .lightPlaceholderColor()
+    bottomBorder?.backgroundColor = App.lightPlaceholderColor()
     addSubview(bottomBorder!)
     
     buttonContainer = UIButton()
@@ -244,21 +260,6 @@ public class BasicCell: UITableViewCell {
                       APP BOOTSTRAP EXTENSIONS
  
  ***************************************************************/
-extension UIColor {
-  
-  public class func textColor() -> UIColor {
-    return UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1.0)
-  }
-  
-  public class func lightPlaceholderColor() -> UIColor {
-    return UIColor(red: 225/255, green: 225/255, blue: 220/255, alpha: 1.0)
-  }
-  
-  public class func darkPlaceholderColor() -> UIColor {
-    return UIColor(red: 195/255, green: 195/255, blue: 190/255, alpha: 1.0)
-  }
-}
-
 
 
 
