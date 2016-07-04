@@ -54,7 +54,7 @@ public struct App {
     case Two
   }
   
-  public func font(size: CGFloat = fontSize) -> UIFont {
+  public static func font(size: CGFloat = fontSize) -> UIFont {
     return UIFont.systemFontOfSize(size * App.fontSizeModifier)
   }
   
