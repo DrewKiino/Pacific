@@ -48,51 +48,49 @@ public struct App {
   // Ultralight, Light, Medium, Semibold, and Bold.
   public static var fontSize: CGFloat = UIFont.systemFontSize()
   
-  public static var fontSizeModifier: CGFloat = 1.0
-  
   public enum Font {
     case One
     case Two
   }
   
   public static func systemFont(size: CGFloat = fontSize) -> UIFont {
-    return UIFont.systemFontOfSize(size * App.fontSizeModifier)
+    return UIFont.systemFontOfSize(size * App.globalModifier)
   }
   public static func systemBoldFont(size: CGFloat = fontSize) -> UIFont {
-    return UIFont.boldSystemFontOfSize(size * App.fontSizeModifier)
+    return UIFont.boldSystemFontOfSize(size * App.globalModifier)
   }
   
   public static let ultralightFontNames: [String] = []
   public static func ultralightFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     if ultralightFontNames.isEmpty { return nil }
-    return UIFont(name: ultralightFontNames[font.hashValue], size: size * App.fontSizeModifier)
+    return UIFont(name: ultralightFontNames[font.hashValue], size: size * App.globalModifier)
   }
   
   public static var lightFontNames: [String] = []
   public static func lightFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     if lightFontNames.isEmpty { return nil }
-    return UIFont(name: lightFontNames[font.hashValue], size: size * App.fontSizeModifier)
+    return UIFont(name: lightFontNames[font.hashValue], size: size * App.globalModifier)
   }
   
   public static var mediumFontNames: [String] = []
   
   public static func mediumFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     if mediumFontNames.isEmpty { return nil }
-    return UIFont(name: mediumFontNames[font.hashValue], size: size * App.fontSizeModifier)
+    return UIFont(name: mediumFontNames[font.hashValue], size: size * App.globalModifier)
   }
   
   public static var semiBoldFontNames: [String] = []
   
   public static func semiBoldFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     if semiBoldFontNames.isEmpty { return nil }
-    return UIFont(name: semiBoldFontNames[font.hashValue], size: size * App.fontSizeModifier)
+    return UIFont(name: semiBoldFontNames[font.hashValue], size: size * App.globalModifier)
   }
   
   public static var boldFontnames: [String] = []
   
   public static func boldFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
     if semiBoldFontNames.isEmpty { return nil }
-    return UIFont(name: boldFontnames[font.hashValue], size: size * App.fontSizeModifier)
+    return UIFont(name: boldFontnames[font.hashValue], size: size * App.globalModifier)
   }
   /**************************************************************
    
