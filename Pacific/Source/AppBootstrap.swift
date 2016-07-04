@@ -44,7 +44,32 @@ public struct App {
                         FONTS
  
  ***************************************************************/
-  public static var fontSize: CGFloat = 12.0
+  // Ultralight, Light, Medium, Semibold, and Bold.
+  public static var fontSize: CGFloat = UIFont.systemFontSize()
+  public static var fontSizeModifier: CGFloat = 1.0
+  public func font(size: CGFloat = fontSize) -> UIFont {
+    return UIFont.systemFontOfSize(size * App.fontSizeModifier)
+  }
+  public static var ultralightFontName: String = ""
+  public static func ultralightFont(size: CGFloat = fontSize) -> UIFont? {
+    return UIFont(name: ultralightFontName, size: size * App.fontSizeModifier)
+  }
+  public static var lightFontName: String = ""
+  public static func lightFont(size: CGFloat = fontSize) -> UIFont? {
+    return UIFont(name: lightFontName, size: size * App.fontSizeModifier)
+  }
+  public static var mediumFontName: String = ""
+  public static func mediumFont(size: CGFloat = fontSize) -> UIFont? {
+    return UIFont(name: mediumFontName, size: size * App.fontSizeModifier)
+  }
+  public static var semiBoldFontName: String = ""
+  public static func semiBoldFont(size: CGFloat = fontSize) -> UIFont? {
+    return UIFont(name: semiBoldFontName, size: size * App.fontSizeModifier)
+  }
+  public static var boldFontname: String = ""
+  public static func boldFont(size: CGFloat = fontSize) -> UIFont {
+    return UIFont(name: boldFontname, size: size * App.fontSizeModifier) ?? UIFont.boldSystemFontOfSize(size * App.fontSizeModifier)
+  }
 /**************************************************************
  
                         APP BOOTSTRAP CLASS

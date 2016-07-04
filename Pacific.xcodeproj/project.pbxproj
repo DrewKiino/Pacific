@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5EA06E2BA2027C2CC3197A75 /* Pods_Pacific.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878F6D94656F1C23135B4A43 /* Pods_Pacific.framework */; };
-		EE04D8441D29BE1A008CB388 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04D8431D29BE1A008CB388 /* AppFonts.swift */; };
 		EE5C77481D27734E0080B603 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C77471D27734E0080B603 /* Example.swift */; };
 		EEBEBA051D0548E5004F4623 /* Pacific.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBEBA041D0548E5004F4623 /* Pacific.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEBEBA0C1D0548E5004F4623 /* Pacific.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBEBA011D0548E5004F4623 /* Pacific.framework */; };
@@ -33,7 +32,6 @@
 		878F6D94656F1C23135B4A43 /* Pods_Pacific.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pacific.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B891D888504AEC0127665E58 /* Pods-Pacific.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pacific.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pacific/Pods-Pacific.debug.xcconfig"; sourceTree = "<group>"; };
 		E6948505195BF3CD48AC9360 /* Pods-Pacific.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pacific.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pacific/Pods-Pacific.release.xcconfig"; sourceTree = "<group>"; };
-		EE04D8431D29BE1A008CB388 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		EE5C77471D27734E0080B603 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		EEBEBA011D0548E5004F4623 /* Pacific.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pacific.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBEBA041D0548E5004F4623 /* Pacific.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pacific.h; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				EEBEBA1D1D05492D004F4623 /* AppDB.swift */,
 				EEBEBA1F1D05492D004F4623 /* AppHttp.swift */,
 				EEBEBA201D05492D004F4623 /* AppSockets.swift */,
-				EE04D8431D29BE1A008CB388 /* AppFonts.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE04D8441D29BE1A008CB388 /* AppFonts.swift in Sources */,
 				EEBEBA241D05492D004F4623 /* AppHttp.swift in Sources */,
 				EEBEBA251D05492D004F4623 /* AppSockets.swift in Sources */,
 				EEBEBA211D05492D004F4623 /* AppBootstrap.swift in Sources */,
