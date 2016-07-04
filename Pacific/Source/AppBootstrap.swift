@@ -54,8 +54,11 @@ public struct App {
     case Two
   }
   
-  public static func font(size: CGFloat = fontSize) -> UIFont {
+  public static func systemFont(size: CGFloat = fontSize) -> UIFont {
     return UIFont.systemFontOfSize(size * App.fontSizeModifier)
+  }
+  public static func systemBoldFont(size: CGFloat = fontSize) -> UIFont {
+    return UIFont.boldSystemFontOfSize(size * App.fontSizeModifier)
   }
   
   public static let ultralightFontNames: [String] = [""]
@@ -82,8 +85,8 @@ public struct App {
   
   public static var boldFontnames: [String] = [""]
   
-  public static func boldFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont {
-    return UIFont(name: boldFontnames[font.hashValue], size: size * App.fontSizeModifier) ?? UIFont.boldSystemFontOfSize(size * App.fontSizeModifier)
+  public static func boldFont(font: Font = Font.One, size: CGFloat = fontSize) -> UIFont? {
+    return UIFont(name: boldFontnames[font.hashValue], size: size * App.fontSizeModifier)
   }
 /**************************************************************
  
