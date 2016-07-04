@@ -39,6 +39,7 @@ public struct App {
 
 ***************************************************************/
   public static var isProduction: Bool = false
+  public static var standardPadding: CGFloat = 8.0
 /**************************************************************
  
                         FONTS
